@@ -14,18 +14,31 @@
     <br>
     <button id="btn2">Existing Users Click Here</button>
 
+    <h1>Javascript Alert Function</h1>
+
+    <button id="btn3">launcher 1</button>
+    <button id="btn4">launcher 2</button>
+    <button id="btn5">launcher 3</button>
+
     <script>
         // Select all Elements of Interest
 
         let btn1 = document.getElementById("btn1");
         let btn2 = document.getElementById("btn2");
+        
+        let buttn3 = document.getElementById("btn3");
+        let buttn4 = document.getElementById("btn4");
+        let buttn5 = document.getElementById("btn5");
 
 
         // Bind the Variables to an EventListener
 
         btn1.addEventListener("click", userName);
         btn2.addEventListener("click", oldMem);
-
+        
+        buttn3.addEventListener("click", news);
+        buttn4.addEventListener("click", greatest);
+        buttn5.addEventListener("click", awesome);
 
         // Write an EventHandler Function
 
@@ -50,6 +63,30 @@
                 alert("You are not yet a Member");
             }
             }
+        
+            function news() {
+               if (4 < 410 ){
+                    alert ("Not a fake news!");
+               }else{
+                   alert("A Fake News!");
+               } 
+            }
+
+        function greatest() {
+            if (5 > 6){
+                alert ("5 is not the greatest!");
+            }else {
+                alert ("5 is the greatest!");
+            }
+        } 
+        
+        function awesome() {
+            if (3 <= 3){
+                alert ("Javascripts is awesome!");
+            }else{
+                alert("Javascript is not awesome!")
+            }
+        } 
         
     </script>
 
