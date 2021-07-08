@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Javascript</title>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+
+    <button id="btn1">New Here? Click Here.</button>
+    <br>
+    <br>
+    <button id="btn2">Existing Users Click Here</button>
+
+    <script>
+        // Select all Elements of Interest
+
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+
+
+        // Bind the Variables to an EventListener
+
+        btn1.addEventListener("click", userName);
+        btn2.addEventListener("click", oldMem);
+
+
+        // Write an EventHandler Function
+
+        function userName() {
+            let name = prompt("Please Enter Your Name ");
+            
+            alert(`${name} you are highly welcome to my page`);
+        }
+
+        function oldMem() {
+            let oldMem = prompt("Existing Members Enter Your Name ");
+
+            let oldMem2 = oldMem.toLowerCase();
+            
+            if (oldMem2 === "alice") {
+                alert("Welcome back Alice ");   
+            }
+            else if (oldMem2 === "bob") {
+                alert("Welcome back Bob"); 
+            }
+            else {
+                alert("You are not yet a Member");
+            }
+            }
+        
+    </script>
+
+</body>
+</html>

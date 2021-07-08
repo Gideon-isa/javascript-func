@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <h1>Javascript Alert Function</h1>
+
+    <button id="btn1">launcher 1</button>
+    <button id="btn2">launcher 2</button>
+    <button id="btn3">launcher 3</button>
+
+    <script>
+        // Select all Element of Interest
+
+        let buttn1 = document.getElementById("btn1");
+        let buttn2 = document.getElementById("btn2");
+        let buttn3 = document.getElementById("btn3");
+
+        // Bind the variables to an Event
+
+        buttn1.addEventListener("click", news);
+        buttn2.addEventListener("click", greatest);
+        buttn3.addEventListener("click", awesome);
+
+        // Write the EventHandler Function
+
+        function news() {
+               if (4 < 410 ){
+                    alert ("Not a fake news!");
+               }else{
+                   alert("A Fake News!");
+               } 
+            }
+
+        function greatest() {
+            if (5 > 6){
+                alert ("5 is not the greatest!");
+            }else {
+                alert ("5 is the greatest!");
+            }
+        } 
+        
+        function awesome() {
+            if (3 <= 3){
+                alert ("Javascripts is awesome!");
+            }else{
+                alert("Javascript is not awesome!")
+            }
+        }  
+    </script>
+    
+</body>
+</html>
